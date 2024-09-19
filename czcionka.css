@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ważne, aby kontrolować rozmiary elementów */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center;     /* Wyśrodkowanie w pionie */
+    height: 100vh;           /* Ustawiamy wysokość na 100% okna przeglądarki */
+    background-color: #f8f8f8; /* Lekko szare tło */
+    margin: 0;               /* Usunięcie domyślnych marginesów przeglądarki */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;       /* Maksymalna szerokość kontenera */
+    border: 2px solid #000;  /* Czarna ramka wokół całej strony */
+    background-color: #fff;  /* Białe tło dla kontenera */
+}
+
+header {
+    text-align: center;
+    padding: 0;              /* Usunięcie odstępów */
+    margin: 0;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;          /* Usunięcie przerwy pod obrazkiem */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Równomierne rozmieszczenie kolumn */
+    align-items: stretch;           /* Rozciągnięcie elementów na pełną wysokość */
+}
+
+aside {
+    width: 40%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-right: 2px solid #000; /* Ramka po prawej stronie menu */
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 15px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    width: 60%;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+section h1 {
+    text-align: center;
+}
